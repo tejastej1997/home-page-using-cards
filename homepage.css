@@ -4,6 +4,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 nav {
@@ -55,6 +56,12 @@ nav .logo {
     color: black;
 }
 
+.signin{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 nav .signin button {
     background-color: black;
     color: white;
@@ -62,10 +69,9 @@ nav .signin button {
     border: none;
     padding: 8px;
     border-radius: 5px;
-    margin-left: 20px;
 }
 
-nav .signin button:hover{
+nav .signin button:hover {
     background-color: white;
     color: black;
     transition: 0.2s all;
@@ -110,7 +116,7 @@ section div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+
 
 }
 
@@ -251,4 +257,47 @@ p i {
     margin: 20px auto;
     max-width: 1250px;
     padding: 0 10px;
+}
+
+.toggle{
+    display: none;
+}
+
+.show{
+    visibility: visible;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .middle-content {
+        position: absolute;
+        /* top: 51px; */
+        border: 1px solid black;
+        inset: 55px 0 0;
+        background-color: black;
+        height: fit-content;
+        padding: 20px 0;
+        z-index: 1;
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .middle-content ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .middle-content ul li a {
+        color: white;
+        cursor: pointer;
+    }
+    .middle-content ul li a:hover{
+        color: gray;
+        transition: 0.2s all;
+    }
 }
