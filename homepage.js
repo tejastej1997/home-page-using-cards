@@ -7,5 +7,4 @@ btn[0].addEventListener('click',()=>{
     btn[0].classList.toggle('fa-xmark')
 
     middlecontent[0].classList.toggle('show')
-    console.log(middlecontent[0]);
 })
