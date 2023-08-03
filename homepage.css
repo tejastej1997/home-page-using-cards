@@ -8,13 +8,12 @@
 
 nav {
     background-color: #fff;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     margin: 10px 100px;
     align-items: center;
     /* border: 1px solid black; */
-    grid-template-columns: 200px 800px 300px;
-
 }
 
 nav .logo {
@@ -65,57 +64,69 @@ nav .signin button {
     border-radius: 5px;
     margin-left: 20px;
 }
-center 
-{
+
+nav .signin button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s all;
+    box-shadow: 0 0 0 1px inset black;
+    cursor: pointer;
+}
+
+center {
     margin-top: 40px;
 }
+
 center h1 {
     font-family: 'Arimo', sans-serif;
     opacity: 0.8;
-    
+
 }
-center h1 span
-{
+
+center h1 span {
     font-style: italic;
     text-decoration: underline;
     font-weight: normal;
 }
-section
-{
+
+section {
     display: flex;
     justify-content: center;
-}
-section div
-{
+    gap: 40px 20px;
+    margin: 80px auto;
+    max-width: 950px;
+    /* padding: 0 10px; */
     /* border: 1px solid black; */
-    width: 170px;
+    flex-wrap: wrap;
+}
+
+section div {
+    /* border: 1px solid black; */
+    /* width: 170px; */
+    flex: 1 1 170px;
     height: 320px;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 80px 10px;
-  
+   
+
 }
-section div:nth-child(2n)
-{
-    transform: translateY(-20px);
-}
-section div p
-{
+
+section div p {
     color: white;
     font-style: italic;
 }
-section div h3
-{
+
+section div h3 {
     color: white;
     font-size: 30px;
     font-family: 'Arimo', sans-serif;
     margin: 10px 0;
 }
-section div button
-{
+
+section div button {
     padding: 8px;
     opacity: 0.6;
     border-radius: 8px;
@@ -124,101 +135,120 @@ section div button
     background-color: grey;
 
 }
-section div:hover
-{
+
+section div:hover {
     box-shadow: 5px 5px 10px grey;
     cursor: pointer;
+    transition: 0.25s all;
+    transform: translateY(-20px);
 }
 
-section .div1 
-{
+section .div1 {
     background-image: url('./assets/img1.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-section .div2
-{
+
+section .div2 {
     background-image: url('./assets/img2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-section .div3
-{
+
+section .div3 {
     background-image: url('./assets/img3.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-section .div4
-{
+
+section .div4 {
     background-image: url('././assets/img4.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-section .div5
-{
+
+section .div5 {
     background-image: url('./assets/img6.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.section2
-{
+
+.section2 {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: auto;
 }
-.section2 .row1,.row2,.row3,.row4,.row5
-{
+
+.section2 .row1,
+.row2,
+.row3,
+.row4,
+.row5 {
     /* border: 1px solid black; */
-    width: 230px;
+    flex: 1 1 230px;
     height: 300px;
     border-radius: 8px;
     position: relative;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     background-image: url('./assets/img7.jpeg');
-   
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+
 }
-.section2 .row1 .row-content,.row2 .row-content,.row3 .row-content,.row4 .row-content,.row5 .row-content
-{
+
+.section2 .row1 .row-content,
+.row2 .row-content,
+.row3 .row-content,
+.row4 .row-content,
+.row5 .row-content {
     position: absolute;
     top: 60%;
     left: 20px;
 }
- .row-content p,h2
-{
+
+.row-content p,
+h2 {
     margin-bottom: 10px;
     color: white;
 }
- .row-content h5
-{
+
+.row-content h5 {
     color: grey;
 }
-.row2
-{
+
+.row2 {
     background-image: url('./assets/img8.jpeg');
 }
-.row3
-{
+
+.row3 {
     background-image: url('./assets/img9.jpeg');
 }
-.row4
-{
+
+.row4 {
     background-image: url('./assets/img1.jpeg');
 }
-.row5
-{
+
+.row5 {
     background-image: url('./assets/img3.jpeg');
 }
-p i
-{
+
+p i {
     font-size: 10px;
 }
-.heading 
-{
+
+.heading {
     display: flex;
     justify-content: space-between;
-    margin: 20px 80px;
+    margin: 20px auto;
+    max-width: 1250px;
+    padding: 0 10px;
 }
