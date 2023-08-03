@@ -7,6 +7,10 @@
     /* border: 1px solid black; */
 }
 
+body{
+    padding: 0 20px;
+}
+
 nav {
     background-color: #fff;
     display: flex;
@@ -264,10 +268,14 @@ p i {
 }
 
 .show{
-    visibility: visible;
+    visibility: visible !important;
 }
 
-
+.btn{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
 
 @media screen and (max-width:1024px) {
     .middle-content {
@@ -279,7 +287,9 @@ p i {
         height: fit-content;
         padding: 20px 0;
         z-index: 1;
-        display: none;
+        /* display: none; */
+        visibility: hidden;
+
     }
 
     .toggle{
@@ -290,6 +300,10 @@ p i {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    .middle-content ul li{
+        margin-left: 0;
     }
 
     .middle-content ul li a {
