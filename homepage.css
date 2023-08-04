@@ -271,8 +271,8 @@ p i {
 
 .show{
     visibility: visible !important;
+    transition: 1s all ease-in-out;
 }
-
 .btn{
     cursor: pointer;
     width: 20px;
